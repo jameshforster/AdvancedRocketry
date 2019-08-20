@@ -874,6 +874,12 @@ public class AdvancedRocketry {
 			AdvancedRocketryFluids.fluidOxygen = FluidRegistry.getFluid("oxygen");
 		}
 
+		AdvancedRocketryFluids.fluidLiquidOxygen = new FluidColored("liquidoxygen",0xFF8f94b9).setUnlocalizedName("liquidoxygen").setGaseous(false).setLuminosity(10).setDensity(800).setViscosity(1500);
+		if(!FluidRegistry.registerFluid(AdvancedRocketryFluids.fluidOxygen))
+		{
+			AdvancedRocketryFluids.fluidLiquidOxygen = FluidRegistry.getFluid("liquidoxygen");
+		}
+
 		AdvancedRocketryFluids.fluidHydrogen = new FluidColored("hydrogen",0xFFdbc1c1).setUnlocalizedName("hydrogen").setGaseous(false).setLuminosity(10).setDensity(800).setViscosity(1500);
 		if(!FluidRegistry.registerFluid(AdvancedRocketryFluids.fluidHydrogen))
 		{
